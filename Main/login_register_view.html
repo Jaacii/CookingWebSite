@@ -13,6 +13,10 @@
 <div class= loginblock> 
  <form method="post" action="index.php">
  <h2> Login: </br></h2>
+ <?php include Database/login.php;
+		include Database/check_login.php;
+
+?>
 		   Username:<br/>
 		   <input type="text" name="username"><br/>
 		   Password:<br/>
@@ -27,6 +31,9 @@
 <div class= registerblock> 
 <form method="post" action="index.php">
 <h2> Signing up: </br></h2>
+<?php include Database/register.php;
+
+?>
 		   Username:<br/>
 		   <input type="text" name="username"><br/>
 		   Password:<br/>
