@@ -1,0 +1,24 @@
+/*css  register*/
+
+
+body {
+	background-color: lightblue;
+}
+
+.loginblock{
+	background-color: pink;
+	border: 5px solid grey;
+	text-align: center;
+	width: 20%;
+	margin: 10px;
+	
+}
+
+.registerblock{
+	background-color: pink;
+	border: 5px solid grey;
+	text-align: center;
+	width: 20%;
+	margin: 10px;
+	display:  inline-block;	
+}
