@@ -1,0 +1,35 @@
+/*css*/
+body { 
+background-color: lightblue;
+}
+
+.sidebar{
+width: 16%;					/*breite */
+	height: 100%;				/*höhe */
+	position: fixed;			/*absolute, static, fixed etc */
+	display:  inline-block;		/*positioniert sich nebeneinander wenn möglich */
+	/*float: right;*/			/*rechts hinsetzen*/
+	right: 0;					/*rechts hinsetzen*/
+	background-color: Orange;	/*background */
+	border: 5px solid Yellow;
+	border-radius: 20px;
+	padding-left: 20px;
+	font-size: 120%
+}
+
+.maincontent{
+	background-color: Orange;
+	border: 5px solid Yellow;
+	border-radius: 20px;
+	padding-left: 20px;
+	font-size: 120%
+	display:  inline-block;	
+	margin-right: 310px;
+}
+.navigation {
+	background-color: darkorange;
+	border: 2px solid black;
+	padding-left: 20px;
+	font-size: 120%;
+	
+}
