@@ -1,1 +1,4 @@
 notepad++
+
+phpMyAdmin
+xamp
