@@ -2,6 +2,11 @@
 <?php
 include ("config.php");
 session_start();
+
+
+
+			
+			
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	
 	$myusername = mysqli_real_escape_string($db, $_POST['username']);
@@ -17,12 +22,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	if($count ==1) {
 	session_register("myusername");
 $_SESSION['login_user']	 = $myusername;
+//checklogin anbindung  if sgsg) 
+
 
 header("location: mainview.html");
 	} else {
 		$error= "Login Name or Password invalid";
 	}
 	}
+	
+	
+	  echo "<form method="POST" action="index.php">
+ <h2> Login: </br></h2>
+ 
+		   Username:<br/>
+		   <input type='text' name='username'><br/>
+		   Password:<br/>
+			<input type='password' name='password'><br/>
+			<input type='submit' name='Login'>
+			
+			</form>";
 }
 
 /*
