@@ -1,13 +1,8 @@
 <!DOCTYPE html>
 <?php
-include('config');
+include('Database/config');
 session_start();
 
-$range_result = mysql_query( " SELECT MAX(`id`) AS max_id , MIN(`id`) AS min_id FROM `recipe` ");
-$range_row = mysql_fetch_object( $range_result ); 
-$random = mt_rand( $range_row->min_id , $range_row->max_id );
-$result = mysql_query( " SELECT * FROM `recipe` WHERE `id` >= $random LIMIT 0,1 "); 
-		//evtl woanders einordnen evtl limit ändern
 ?>
 
 <html lang= "de">
@@ -18,6 +13,9 @@ $result = mysql_query( " SELECT * FROM `recipe` WHERE `id` >= $random LIMIT 0,1 
 </head>
 
 <body>
+<?php 
+include('Database/randomizer.php')
+?>
 <nav> 
  <div class=navigation>
  <a href ="mainview.html">| Home |</a> <a href ="..."> Search |</a>  <a href ="..."> Random |</a> <a href ="..."> Contact |</a> <a href ="..."> About |</a> <a href ="test.html"> ExampleTable |</a><!--Legal notice--> 
