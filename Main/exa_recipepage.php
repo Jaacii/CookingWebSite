@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-include('config');
+include('Database/config');
 ?>
 
 <html lang= "de">

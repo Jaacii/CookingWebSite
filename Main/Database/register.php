@@ -1,5 +1,5 @@
 <?php 
-echo "<form method='post' action='Database/register.php'>
+echo "<form method='post' action='register.php'>
 <h2> Signing up: </br></h2>
 //<?php include ('Database/register.php');
 
@@ -18,7 +18,7 @@ echo "<form method='post' action='Database/register.php'>
 			<br/><br/>
 			<br/><br/>
 			
-			<form method='post' action='index.php>
+			<form method='post' action='register.php> 
 			optional questions: <br/>
 			What is your favorite Food? :<br/>
 			<input type='name' name='favorite'><br/>

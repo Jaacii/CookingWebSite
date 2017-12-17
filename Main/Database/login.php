@@ -1,6 +1,6 @@
 
 <?php
-include ("config.php");
+include ('config.php');
 session_start();
 
 
@@ -23,16 +23,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	session_register("myusername");
 $_SESSION['login_user']	 = $myusername;
 //checklogin anbindung  if sgsg) 
-
-
-header("location: mainview.html");
+header("location: ../mainview.html");
 	} else {
 		$error= "Login Name or Password invalid";
 	}
 	}
 	
 	
-	  echo "<form method='POST' action='index.php'>
+	  echo "<form method='POST' action='login.php'>
  <h2> Login: </br></h2>
  
 		   Username:<br/>

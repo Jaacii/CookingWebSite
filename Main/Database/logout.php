@@ -2,7 +2,7 @@
 <?php
 session_start();
 
-if(session_destry()){
-	header("Location: mainview.html");		//wahrscheinlich falsch
+if(session_destroy()){
+	header("Location: ../mainview.html");		//wahrscheinlich falsch
 }
 ?> 
