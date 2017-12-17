@@ -13,30 +13,30 @@ session_start();
 </head>
 <body>
 <div class= loginblock> 
- <form method="post" action="index.php">
- <h2> Login: </br></h2>
- <?php include Database/login.php;
-		include Database/check_login.php;
+ <!-- <form method="post" action="index.php">
+ <h2> Login: </br></h2>-->
+ <?php include ('Database/login.php');
+	//	include ('Database/check_login.php');
 
 ?>
-		   Username:<br/>
+	 <!--	   Username:<br/>
 		   <input type="text" name="username"><br/>
 		   Password:<br/>
 			<input type="password" name="password"><br/>
 			<input type="submit" name="Login">
 			
-			</form>
+			</form>-->
 </div>
 
 
 
 <div class= registerblock> 
-<form method="post" action="index.php">
-<h2> Signing up: </br></h2>
-<?php include Database/register.php;
+ <!-- <form method="post" action="index.php">
+<h2> Signing up: </br></h2>-->
+<?php include ('Database/register.php');
 
 ?>
-		   Username:<br/>
+<!--		      Username:<br/>
 		   <input type="text" name="username"><br/>
 		   Password:<br/>
 			<input type="password" name="password"><br/>
@@ -60,7 +60,7 @@ session_start();
 			<input type="name" name="abneigung"><br/>
 			Do you have allergies? :<br/>
 			<input type="name" name="allergie"><br/>
-			</form>
+			</form>   -->
 </div>
 
 

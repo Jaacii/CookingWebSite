@@ -32,7 +32,7 @@ header("location: mainview.html");
 	}
 	
 	
-	  echo "<form method="POST" action="index.php">
+	  echo "<form method='POST' action='index.php'>
  <h2> Login: </br></h2>
  
 		   Username:<br/>
