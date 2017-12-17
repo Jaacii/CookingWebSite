@@ -1,0 +1,99 @@
+/*CSS*/
+
+body {
+	background-color: lightblue;
+}
+/*mainview essential classes*/
+
+.headclass {
+	background-color: Orange;
+	border: 5px solid Yellow;
+	border-radius: 20px;
+	padding-left: 20px;
+	font-size: 120%
+}
+
+
+
+.sidebar{
+	width: 16%;					/*breite */
+	height: 100%;				/*höhe */
+	position: fixed;			/*absolute, static, fixed etc */
+	display:  inline-block;		/*positioniert sich nebeneinander wenn möglich */
+	/*float: right;*/			/*rechts hinsetzen*/
+	right: 0;					/*rechts hinsetzen*/
+	background-color: orange;	/*background */
+	border: 5px solid yellow;
+	/*margin-top: 5px;
+	margin-right 50px;*/
+	text-align: center;
+	padding-top: 5px;
+	
+}
+
+.navigation {
+	background-color: darkorange;
+	border: 2px solid black;
+	padding-left: 20px;
+	font-size: 120%;
+	
+}
+
+.recipeareal {
+	padding-top: 25px;
+	margin: 10px;
+	
+	
+}
+
+/*Login/Register*/
+
+
+.loginblock{
+	background-color: pink;
+	border: 5px solid grey;
+	text-align: center;
+	width: 20%;
+	margin: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 25px;
+}
+
+.registerblock{
+	background-color: pink;
+	border: 5px solid grey;
+	text-align: center;
+	width: 50%;
+	margin: 10px;
+	/*display:  inline-block;	*/
+	padding-bottom: 5px;
+}
+
+.error {
+	background-color: AliceBlue;
+	text-align: center;
+	width: 20%;
+	margin: 10px;
+	/*display:  inline-block;	*/
+	padding-bottom: 5px;
+	
+}
+
+form, .content {
+	margin-left: 25px;
+	width: 30%;
+	padding: 20px;
+	border: 1px solid #B0C4DE;
+	background: AliceBlue ; /*AliceBlue*/
+	border-radius: 0px 0px 10px 10px;
+
+ .btn {
+	border: none;
+	border-radius: 5px;
+	padding: 25px;
+	font-size: 30px;
+	color: white;
+	background: RED;
+	
+}

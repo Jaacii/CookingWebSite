@@ -2,3 +2,7 @@ notepad++
 
 phpMyAdmin
 xamp
+
+
+
+Sprachen: PHP, MYSQL, HTML

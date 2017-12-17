@@ -1,3 +1,4 @@
 7.12 ->php vesuch
 12.12 -> php zeigen lassen
 17.12 -> html-view -> php abänderung
+17.12 -> funktionierendes Registrierungssystem erstellt

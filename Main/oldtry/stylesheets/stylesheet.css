@@ -3,7 +3,7 @@
 body {
 	background-color: lightblue;
 }
-
+/*mainview essential classes*/
 
 .headclass {
 	background-color: Orange;
@@ -42,5 +42,55 @@ body {
 .recipeareal {
 	margin: 10px;
 	
+	
+}
+
+/*Login/Register*/
+
+
+.loginblock{
+	background-color: pink;
+	border: 5px solid grey;
+	text-align: center;
+	width: 20%;
+	margin: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 25px;
+}
+
+.registerblock{
+	background-color: pink;
+	border: 5px solid grey;
+	text-align: center;
+	width: 20%;
+	margin: 10px;
+	/*display:  inline-block;	*/
+	padding-bottom: 5px;
+}
+
+.error {
+  width: 92%; 
+  margin: 0px auto; 
+  padding: 10px; 
+  border: 1px solid #a94442; 
+  color: #a94442; 
+  background: #f2dede; 
+  border-radius: 5px; 
+  text-align: left;
+	
+}
+
+.content {
+	
+}
+
+ .btn {
+	border: none;
+	border-radius: 5px;
+	padding: 25px;
+	font-size: 30px;
+	color: white;
+	background: RED;
 	
 }
