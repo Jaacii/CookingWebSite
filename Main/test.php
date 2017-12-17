@@ -3,8 +3,7 @@
 <!DOCTYPE html>
 
 <?php 
-include ('Database/config.php');
-session_start();
+
 ?>
 
 <html lang= "de">
