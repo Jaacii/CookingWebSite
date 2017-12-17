@@ -9,14 +9,14 @@ session_start();
 <head >
 	<meta charset= "utf-8">
 	<title>Kochdatenbank</title>
-	<link rel="stylesheet" href=stylesheets/login_register_stylesheet.css>
+	<link rel="stylesheet" href=../stylesheets/login_register_stylesheet.css>
 </head>
 <body>
 <div class= loginblock> 
- <form method="post" action="index.php">
+ <form method="post" action="../Database/login.php">
  <h2> Login: </br></h2>
- <?php include Database/login.php;
-		include Database/check_login.php;
+ <?php include ('../Database/login.php');
+		include ('../Database/check_login.php');
 
 ?>
 		   Username:<br/>
@@ -31,10 +31,10 @@ session_start();
 
 
 <div class= registerblock> 
-<form method="post" action="index.php">
+<form method="post" action="../Database/register.php">
 <h2> Signing up: </br></h2>
-<?php include Database/register.php;
-
+<?php include ('../Database/register.php;
+')
 ?>
 		   Username:<br/>
 		   <input type="text" name="username"><br/>
