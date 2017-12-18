@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <?php 
-
+include('core/searchfunc.php') ;
 
 ?>
 
@@ -20,9 +20,9 @@
  </nav>
  
  </header>
-
+<!--  Search form -->
  
- <form method="post" action="searchfunc.php?go" if="searchform">	<!-- ?go? -->
+ <form method="post" action="searchfunc.php" if="searchform">	<!-- ?go? -->
 <input type="text" name="search" placeholder="Search..">
 <input type="submit" name="submit" value="Search">
 </form>

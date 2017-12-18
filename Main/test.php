@@ -9,7 +9,7 @@
 <body>
 
 <header class=headclass> <!--Logo-->
- <h1>Login</h1>
+ <h1>Kochdatenbank</h1>
  
  <nav> 
  <div class=navigation>

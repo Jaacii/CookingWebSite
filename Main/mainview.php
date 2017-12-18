@@ -54,7 +54,7 @@
   <a href ="exa_recipepage.php">
    <img src="img_placeholder/KimchiPlaceholder.jpg" alt="Kimchi" width="350" height="230">
   Kimchi</a>
-  
+  <?php  include ('core/basiclistrecipe.php'); ?>
   
   </div>
 

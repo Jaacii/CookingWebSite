@@ -12,3 +12,5 @@ Werbung?  oder preferenzen einzeln??
 registrierung -> keine doppelten emails und usernames
 
 Upload Rezepte
+
+//mainview ->   Bilder ausgeben? anklickbar machen und spezielle rezept seite öffnen?

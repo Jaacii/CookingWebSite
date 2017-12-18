@@ -18,6 +18,7 @@ if (isset($_POST['reg_user'])) {
   $password1 = mysqli_real_escape_string($db, $_POST['password1']);
   $password2 = mysqli_real_escape_string($db, $_POST['password2']);
 
+
   // form validation
   if (empty($username)) { array_push($errors, "Username is required"); }
   if (empty($email)) { array_push($errors, "Email is required"); }
@@ -25,7 +26,11 @@ if (isset($_POST['reg_user'])) {
   if ($password1 != $password2) {
 	array_push($errors, "Passwords do not match");
   }
-
+	// username email taken?
+	if ( mysqli_num_rows($username) > 0 ) { array_push ($errors, "Username already taken"); }
+	
+	if  (mysqli_num_rows($email) > 0 ) { array_push ($errors, "Username already taken"); }
+	
   
   // register wenn keine Fehler in form
   if (count($errors) == 0) {
