@@ -3,3 +3,4 @@
 17.12 -> html-view -> php abänderung
 17.12 -> funktionierendes Registrierungssystem erstellt
 18.12 -> Login/log out system funktioniert
+18.11 -> Member tabelle wird angezeigt

@@ -13,7 +13,7 @@
 <body>
 <nav> 
  <div class=navigation>
- <a href ="mainview.php">| Home |</a> <a href ="search.php"> Search |</a>  <a href ="random.php"> Random |</a> <a href ="..."> Contact |</a> <a href ="..."> About |</a> <a href ="test.php"> ExampleTable |</a><!--Legal notice--> 
+ <a href ="mainview.php">| Home |</a> <a href ="search.php"> Search |</a>  <a href ="random.php"> Random |</a> <a href ="..."> Contact |</a> <a href ="..."> About |</a> <a href ="test.php"> Members |</a><!--Legal notice--> 
  </nav>
 <div class=sidebar>
 rating:  difficulty:

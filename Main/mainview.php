@@ -20,7 +20,7 @@
 
  <nav> 
  <div class=navigation>
- <a href ="mainview.php">| Home |</a> <a href ="search.php"> Search |</a>  <a href ="random.php"> Random |</a> <a href ="..."> Contact |</a> <a href ="..."> About |</a> <a href ="test.php"> ExampleTable |</a><!--Legal notice--> 
+ <a href ="mainview.php">| Home |</a> <a href ="search.php"> Search |</a>  <a href ="random.php"> Random |</a> <a href ="..."> Contact |</a> <a href ="..."> About |</a> <a href ="test.php"> Members |</a><!--Legal notice--> 
  </nav>
  </header>
  <!--   HEADER end -->
@@ -42,7 +42,10 @@
     <!-- user information -->
     <?php  if (isset($_SESSION['username'])) : ?>
     	<p> Hello <strong><?php echo $_SESSION['username']; ?></strong></p>
+		<p> <a href="" style="color: blue";" >Upload Recipe </a> </p>
+		<!-- add edit preferences? -->
     	<p> <a href="core/logout.php" style="color: red;">logout</a> </p>	<!-- logout funktioniert noch nicht-->
+		
     <?php endif ?>
 	</div>
 	

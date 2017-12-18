@@ -10,3 +10,5 @@ rezeptsortierung
 Werbung?  oder preferenzen einzeln??
 
 registrierung -> keine doppelten emails und usernames
+
+Upload Rezepte

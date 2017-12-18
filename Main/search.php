@@ -16,15 +16,15 @@
  <h1>Kochdatenbank</h1>
 <nav> 
  <div class=navigation>
- <a href ="mainview.php">| Home |</a> <a href ="search.php"> Search |</a>  <a href ="random.php"> Random |</a> <a href ="..."> Contact |</a> <a href ="..."> About |</a> <a href ="test.php"> ExampleTable |</a><!--Legal notice--> 
+ <a href ="mainview.php">| Home |</a> <a href ="search.php"> Search |</a>  <a href ="random.php"> Random |</a> <a href ="..."> Contact |</a> <a href ="..."> About |</a> <a href ="test.php"> Members |</a><!--Legal notice--> 
  </nav>
  
  </header>
 
  
- <form method="post" action="search.php" if="searchform">
+ <form method="post" action="searchfunc.php?go" if="searchform">	<!-- ?go? -->
 <input type="text" name="search" placeholder="Search..">
-<input type="submit" name="subit" value="Search">
+<input type="submit" name="submit" value="Search">
 </form>
 </body>
 
