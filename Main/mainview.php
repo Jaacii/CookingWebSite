@@ -42,7 +42,7 @@
     <!-- user information -->
     <?php  if (isset($_SESSION['username'])) : ?>
     	<p> Hello <strong><?php echo $_SESSION['username']; ?></strong></p>
-    	<p> <a href="mainview.php?logout='1'" style="color: red;">logout</a> </p>	<!-- logout funktioniert noch nicht-->
+    	<p> <a href="core/logout.php" style="color: red;">logout</a> </p>	<!-- logout funktioniert noch nicht-->
     <?php endif ?>
 	</div>
 	

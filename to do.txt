@@ -1,4 +1,4 @@
-mainview.php -> logout funktioniert noch nicht
+
 login -> auch wenn richtig wird fehler angezeigt +
 Warning: mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in C:\xampp\htdocs\testing\registration_login.php on line 60
 
