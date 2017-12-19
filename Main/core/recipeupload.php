@@ -7,7 +7,7 @@ $db = mysqli_connect('localhost', 'root', '', 'cooking4you');
 
 if (isset($_POST['upload'])) {
 //form input
-$foodname = mysqli_real_escape_string($db, $_POST['username']);
+$foodname = mysqli_real_escape_string($db, $_POST['foodname']);
 $nationality = mysqli_real_escape_string($db, $_POST['nationality']);
 $flavor = mysqli_real_escape_string($db, $_POST['flavor']);
 $ingredients = mysqli_real_escape_string($db, $_POST['ingredients']);
@@ -24,7 +24,7 @@ $query = "INSERT INTO recipe (foodname, ingredients, nationality, flavor, diffic
   			  VALUES('$foodname', '$ingredients', '$nationality' , '$flavor', '$difficulty', '$rating', '$preparation')";
   	mysqli_query($db, $query);
 
-	
+	 header('location: ../mainview.php');
 	
 	
 }
