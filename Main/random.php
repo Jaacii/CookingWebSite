@@ -30,7 +30,9 @@ Zubereitung:
 pic   sidebar with ingredients + difficulty and rating
 Zubereitung
 
-<?php include ('Database/randomizer');?>
+<?php 
+include ('Database/randomizer.php');
+?>
 </body>
 
 </html>

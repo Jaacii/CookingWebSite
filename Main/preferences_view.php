@@ -22,6 +22,8 @@
 <?php include ('core/preferencecreate.php');?>
 <form method="post" action="core/preferencecreate.php">
 			<br/>
+			What is your Username? :<br/>	
+			<input type="name" name="user"><br/>		<!-- soll später noch automatisch erkannt werden-->
 			What is your favorite Food? :<br/>
 			<input type="name" name="favorite"><br/>
 			What kind of food do you like? :<br/>

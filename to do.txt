@@ -14,3 +14,9 @@ registrierung -> keine doppelten emails und usernames
 Upload Rezepte
 
 //mainview ->   Bilder ausgeben? anklickbar machen und spezielle rezept seite öffnen?
+
+
+recipeupload : preparation field bigger
+addpreferences -> user automatisch erkennen ohne nachzufragen  + id automatisch erkennen
+Doppelte Eintragungen vermeiden: Registrierung, Preferenzen.  
+Neue preferenzen übersetten die alten
