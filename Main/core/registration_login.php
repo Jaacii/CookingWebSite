@@ -29,7 +29,7 @@ if (isset($_POST['reg_user'])) {
 	// username email taken?
 	if ( mysqli_num_rows($username) > 0 ) { array_push ($errors, "Username already taken"); }
 	
-	if  (mysqli_num_rows($email) > 0 ) { array_push ($errors, "Username already taken"); }
+	if  (mysqli_num_rows($email) > 0 ) { array_push ($errors, "Email already taken"); }
 	
   
   // register wenn keine Fehler in form

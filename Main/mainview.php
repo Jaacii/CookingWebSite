@@ -42,7 +42,8 @@
     <!-- user information -->
     <?php  if (isset($_SESSION['username'])) : ?>
     	<p> Hello <strong><?php echo $_SESSION['username']; ?></strong></p>
-		<p> <a href="" style="color: blue";" >Upload Recipe </a> </p>
+		<p> <a href="uploadrecipeview.php" style="color: blue";" >Upload Recipe </a> </p>
+		<p> <a href="preferences_view.php" style="color: blue";" >Add Food-Preferences </a> </p>
 		<!-- add edit preferences? -->
     	<p> <a href="core/logout.php" style="color: red;">logout</a> </p>	<!-- logout funktioniert noch nicht-->
 		

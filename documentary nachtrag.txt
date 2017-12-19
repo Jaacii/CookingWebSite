@@ -4,4 +4,4 @@
 17.12 -> funktionierendes Registrierungssystem erstellt
 18.12 -> Login/log out system funktioniert
 18.11 -> Member tabelle wird angezeigt
-19.12 -> serch try
+19.12 -> serch try, upload recipe,set preferences
