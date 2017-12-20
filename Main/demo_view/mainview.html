@@ -1,42 +1,63 @@
+<?php  include ('../core/registration_login.php');  
+ ?>
+
 <!DOCTYPE html>
-
-<?php 
-include('config.php');
-session_start();
-?>
-
 <html lang= "de">
 <head >
 	<meta charset= "utf-8">
-	<title>Kochdatenbank</title>
+	<title>Cooking4You</title>
 	<link rel="stylesheet" href=stylesheet.css>
 </head>
-
 <body>
 <div class=sidebar> 
 <img src="../img_placeholder/werbeplaceholder.jpg">
 </br>
- <a href ="login_register_view.html">Sign up</a>
-  <a href ="login_register_view.html">| Login |</a>
-
+ <a href ="register.html">Sign up</a>
+  <a href ="login.html">| Login |</a>
 </div>
-
-
 <header class=headclass> <!--Logo-->
  <h1>Kochdatenbank</h1>
- 
+
  <nav> 
  <div class=navigation>
- <a href ="mainview.html">| Home |</a> <a href ="search.html"> Search |</a>  <a href ="random.html"> Random |</a> <a href ="..."> Contact |</a> <a href ="..."> About |</a> <a href ="test.html"> ExampleTable |</a><!--Legal notice--> 
+ <a href ="mainview.html">| Home |</a> <a href ="search.html"> Search |</a>  <a href ="random.html"> Random |</a> <a href ="..."> Contact |</a> <a href ="..."> About |</a> <a href ="test.html"> Members |</a><!--Legal notice--> 
  </nav>
-
  </header>
+ <!--   HEADER end -->
+ 
+ 
+<div class="content">
+  	<!-- notification -->
+  	<?php if (isset($_SESSION['success'])) : ?>
+      <div class="error success" >
+      	<h3>
+          <?php 
+          	echo $_SESSION['success']; 
+          	unset($_SESSION['success']);
+          ?>
+      	</h3>
+      </div>
+  	<?php endif ?>
+
+    <!-- user information -->
+    <?php  if (isset($_SESSION['username'])) : ?>
+    	<p> Hello <strong><?php echo $_SESSION['username']; ?></strong></p>
+		<p> <a href="uploadrecipeview.html" style="color: blue";" >Upload Recipe </a> </p>
+		<p> <a href="preferences_view.html" style="color: blue";" >Add Food-Preferences </a> </p>
+		<!-- add edit preferences? -->
+    	<p> <a href="../core/logout.php" style="color: red;">logout</a> </p>	<!-- logout funktioniert noch nicht-->
+		
+    <?php endif ?>
+	</div>
+	
+	
   <div class=recipeareal>
   <a href ="exa_recipepage.html">
    <img src="../img_placeholder/KimchiPlaceholder.jpg" alt="Kimchi" width="350" height="230">
   Kimchi</a>
-  
+  <?php  include ('../core/basiclistrecipe.php'); ?>
   
   </div>
+
 </body>
 </html>

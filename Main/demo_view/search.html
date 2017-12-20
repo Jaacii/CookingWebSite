@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 
 <?php 
-include('config.php');
-session_start();
+include('../core/searchfunc.php') ;
+
 ?>
 
 <html lang= "de">
 <head >
 	<meta charset= "utf-8">
 	<title>Kochdatenbank</title>
-	<link rel="stylesheet" href=../stylesheets/searchstylesheet.css>
+	<link rel="stylesheet" href= stylesheet.css>
 </head>
 <body>
 <header class=headclass> <!--Logo-->
  <h1>Kochdatenbank</h1>
 <nav> 
  <div class=navigation>
- <a href ="mainview.html">| Home |</a> <a href ="..."> Search |</a>  <a href ="..."> Random |</a> <a href ="..."> Contact |</a> <a href ="..."> About |</a> <a href ="test.html"> ExampleTable |</a><!--Legal notice--> 
+ <a href ="mainview.html">| Home |</a> <a href ="search.html"> Search |</a>  <a href ="random.html"> Random |</a> <a href ="..."> Contact |</a> <a href ="..."> About |</a> <a href ="test.html"> Members |</a><!--Legal notice--> 
  </nav>
+ 
  </header>
- <form method="post" action="../Database/search.php" if="searchform">
+<!--  Search form -->
+ 
+ <form method="post" action="../core/searchfunc.php" if="searchform">	<!-- ?go? -->
 <input type="text" name="search" placeholder="Search..">
-<input type="submit" name="subit" value="Search">
+<input type="submit" name="submitt" value="Search">
 </form>
 </body>
 
