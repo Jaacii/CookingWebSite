@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<?php
 
-?>
 
 <html lang= "de">
 <head >
@@ -16,17 +14,46 @@
  <a href ="mainview.php">| Home |</a> <a href ="search.php"> Search |</a>  <a href ="random.php"> Random |</a> <a href ="..."> Contact |</a> <a href ="..."> About |</a> <a href ="test.php"> Members |</a><!--Legal notice--> 
  </nav>
 <div class=sidebar>
-rating:  difficulty:
-Ingredients:
+<?php
+//wie kriege ich die idee beim anklicken automatisch aktualisiert.
+$id =1;													//get id von suche oder vom drauf klicken auf bild??
+$db=mysql_connect  ('localhost', 'root', '', 'cooking4you');
+if ($db->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+$sql = "SELECT   ingredients ,difficulty, rating  FROM testrecipe WHERE id = $id";
+$result = $db->query($sql);
+if ($result->num_rows > 0) {
+   // Jede Reihe ausgeben
+   while($row = $result->fetch_assoc()) {
+	   echo "</br>Ingredients: " . $row["ingredients"].  "  </br> difficulty:   " . $row["difficulty"]. " </br>rating:   " . $row["rating"]. "<br>";
+		}
+} else {
+    echo "No recipes uploaded yet.";
+}
+
+?>
+
 </div>
 <div class=maincontent>
 <img src="img_placeholder/KimchiPlaceholder.jpg" alt="Kimchi" width="350" height="230">
+<?php
+$sql2 = "SELECT   pic ,foodname, preparation  FROM testrecipe WHERE id = $id";
+$result2 = $db->query($sql2);
+if ($result2->num_rows > 0) {
+   // Jede Reihe ausgeben
+   while($row = $result->fetch_assoc()) {
+	   echo "</br>" . $row["pic"].  "  </br> Recipe for:   " . $row["foodname"]. " </br></br>preparation:  </br> " . $row["preparation"]. "<br>";
+		}
+} else {
+    echo "No recipes uploaded yet.";
+}
 
-Zubereitung:
+$conn->close();
+?>
 </div>
 
-pic   sidebar with ingredients + difficulty and rating
-Zubereitung
+
 </body>
 
 </html>

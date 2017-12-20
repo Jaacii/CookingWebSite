@@ -22,7 +22,7 @@ include('core/searchfunc.php') ;
  </header>
 <!--  Search form -->
  
- <form method="post" action="searchfunc.php" if="searchform">	<!-- ?go? -->
+ <form method="post" action="core/searchfunc.php" if="searchform">	<!-- ?go? -->
 <input type="text" name="search" placeholder="Search..">
 <input type="submit" name="submitt" value="Search">
 </form>

@@ -20,3 +20,11 @@ recipeupload : preparation field bigger
 addpreferences -> user automatisch erkennen ohne nachzufragen  + id automatisch erkennen
 Doppelte Eintragungen vermeiden: Registrierung, Preferenzen.  
 Neue preferenzen übersetten die alten
+
+Order by preferencen main page rezepte ? 
+evtl: members : anzahl der rezeptuploads anzeigen -> counter setzen??
+
+
+/get id von suche oder vom drauf klicken auf bild exa recipe page und search und mainview betroffen??
+
+user -> admin/user -> fähigkeit leute in members zu admin zu ernennen. evtl member suchen können.
