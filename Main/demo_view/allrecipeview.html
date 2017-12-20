@@ -1,23 +1,21 @@
-<!-- My standard header-->
 <!DOCTYPE html>
 <html lang= "de">
 <head >
 	<meta charset= "utf-8">
 	<title>Kochdatenbank</title>
-	<link rel="stylesheet" href="stylesheet.css" type="text/css">
+	<link rel="stylesheet" href= stylesheet.css>
 </head>
 <body>
-
 <header class=headclass> <!--Logo-->
  <h1>Kochdatenbank</h1>
- 
- <nav> 
+<nav> 
  <div class=navigation>
-<a href ="mainview.php">| Home |</a> <a href ="search.php"> Search |</a>  <a href ="random.php"> Random |</a> <a href ="..."> Contact |</a> <a href ="..."> About |</a> <a href ="test.php"> Members |</a><a href ="allrecipeview.php"> Recipes |</a><!-- -->
+<a href ="mainview.php">| Home |</a> <a href ="search.php"> Search |</a>  <a href ="random.php"> Random |</a> <a href ="..."> Contact |</a> <a href ="..."> About |</a> <a href ="test.php"> Members |</a><a href ="allrecipeview.php"> Recipes |</a><!-- --> 
  </nav>
+ 
  </header>
-<!--  -->	
-</br>
+ 
+ </br>
 
  
  <div class = loginblock>
@@ -35,23 +33,23 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT id, username, email FROM testuser";
+$sql = "SELECT id, foodname, difficulty, rating FROM testrecipe";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
    // Jede Reihe ausgeben
    while($row = $result->fetch_assoc()) {
-	   echo "" . $row["id"]. " - User: " . $row["username"]. "   |   " . $row["email"]. "<br>";
+	   echo "" . $row["id"]. " - " . $row["foodname"]. "   difficulty:  " . $row["difficulty"]. "   rating: " . $row["rating"]."<br>";
 		}
 } else {
-    echo "No Members registered yet.";
+    echo "No recipes uploaded yet.";
 }
 $conn->close();
 ?>
 
 </div>
-  
-  
-</body>
-
-</html>
+ 
+ 
+ 
+ </body>
+ </html>
