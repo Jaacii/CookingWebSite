@@ -11,4 +11,5 @@
 		-> randomizer ist falsch. suche fehlt. startseite bilder + name aus datenbank + rezept seite fehlen.glaube werbung kann ich als punkt rauswerfen. oder als bonus drin lassen. preferenzen einzelne tabelle
 		-> rezepte datenbank muss wegen üic überarbeitet werden
 
-20.12 -> randomizer try, example recipe page ry, search try, allrecipelist added
+20.12 -> randomizer try(fail), example recipe page ry(fail), search try (fail), allrecipelist added.         image upload works, but unsure about quality 
+21.12 -> ID wird erkannt. 

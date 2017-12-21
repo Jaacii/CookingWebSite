@@ -2,6 +2,7 @@
 session_start();
 
 // DEKLARATION
+$id ="";
 $username = "";
 $email    = "";
 $errors = array(); 
@@ -26,7 +27,7 @@ if (isset($_POST['reg_user'])) {
   if ($password1 != $password2) {
 	array_push($errors, "Passwords do not match");
   }
-	// username email taken?
+	// username email taken?-------------------------------------?
 	if ( mysqli_num_rows($username) > 0 ) { array_push ($errors, "Username already taken"); }
 	
 	if  (mysqli_num_rows($email) > 0 ) { array_push ($errors, "Email already taken"); }
@@ -39,7 +40,11 @@ if (isset($_POST['reg_user'])) {
   			  VALUES('$username', '$email', '$password')";
   	mysqli_query($db, $query);
   	$_SESSION['username'] = $username;
+	
+	
   	$_SESSION['success'] = "Logged in";
+	
+
   	header('location: mainview.php');
   }
 
@@ -62,9 +67,11 @@ if (isset($_POST['login_user'])) {
   	$password = md5($password);
   	$query = "SELECT * FROM testuser WHERE username='$username' AND password='$password'";
   	$results = mysqli_query($db, $query);
-  	if (mysqli_num_rows($results) == 1) {  //fehler hier ? Warning: mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in C:\xampp\htdocs\testing\server.php on line 59
-  	  $_SESSION['username'] = $username;
-  	  $_SESSION['success'] = "Logged in";
+  	if (mysqli_num_rows($results) == 1) {  //fehler hier ? Warning: mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in C:\xampp\htdocs\testing\server.php on line 59	
+		$_SESSION['username'] = $username;
+		$_SESSION['success'] = "Logged in";
+	  
+
   	  header('location: mainview.php');
   	}else {
   		array_push($errors, "Wrong username/password");

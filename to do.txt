@@ -11,7 +11,7 @@ Werbung?  oder preferenzen einzeln??
 
 registrierung -> keine doppelten emails und usernames
 
-Upload Rezepte
+Upload Rezepte----------------------------------------
 
 //mainview ->   Bilder ausgeben? anklickbar machen und spezielle rezept seite öffnen?
 
@@ -25,7 +25,7 @@ Order by preferencen main page rezepte ?
 evtl: members : anzahl der rezeptuploads anzeigen -> counter setzen??
 
 
-/get id von suche oder vom drauf klicken auf bild exa recipe page und search und mainview betroffen??
+/get id von suche oder vom drauf klicken auf bild exa recipe page und search und mainview betroffen??----------------------------------------
 
 user -> admin/user -> fähigkeit leute in members zu admin zu ernennen. evtl member suchen können.
 

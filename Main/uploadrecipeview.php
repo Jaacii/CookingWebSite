@@ -34,13 +34,13 @@
 			rating: :<br/>
 			<input type="name" name="rating"><br/>
 			picture of the food:<br/> 
-			<input type="name" name="pic"><br/>
+			<input type="file" name="image"><br/> 
 			<br/><br/>Preparation:<br/>
 			<input type="name" name="preparation"><br/>
 			<br/><br/>
 			<button type="submit" class="btn" name="upload">Upload Recipe</button>
  </form>
-
+	
 </body>
 
 </html>

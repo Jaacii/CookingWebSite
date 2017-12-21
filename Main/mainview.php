@@ -1,4 +1,5 @@
-<?php  include ('core/registration_login.php');  
+<?php  include ('core/registration_login.php'); 
+//session_start(); 
  ?>
 
 <!DOCTYPE html>
@@ -41,7 +42,8 @@
 
     <!-- user information -->
     <?php  if (isset($_SESSION['username'])) : ?>
-    	<p> Hello <strong><?php echo $_SESSION['username']; ?></strong></p>
+	
+    	<p> Hello <strong><?php echo $_SESSION['username']; ?></strong> </br>ID:  <?php include ('core/getID.php'); ?> </p>
 		<p> <a href="uploadrecipeview.php" style="color: blue";" >Upload Recipe </a> </p>
 		<p> <a href="preferences_view.php" style="color: blue";" >Add Food-Preferences </a> </p>
 		<!-- add edit preferences? -->

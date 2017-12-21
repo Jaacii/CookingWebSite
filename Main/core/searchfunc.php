@@ -21,11 +21,9 @@
 	  echo "<ul>\n"; 
 	  echo "<li>" . "<a  href=\"search.php?id=$ID\">"   .$foodname /*. " " . $LastName */.  "</a></li>\n"; 
 	  echo "</ul>"; 
-	  } header('location: ../exa_recipepage.php') 
-	  } 
-	  else{ 
-	echo  "<p>Please enter a search query</p>"; 
+	   header('location: ../exa_recipepage.php') ;
+	  }
+	  //else{ 
+	//echo  "<p>Please enter a search query</p>"; 
 	} 
-	//} 
-	  
-?>
+	?>
