@@ -27,10 +27,21 @@ if (isset($_POST['reg_user'])) {
   if ($password1 != $password2) {
 	array_push($errors, "Passwords do not match");
   }
-	// username email taken?-------------------------------------?
-	if ( mysqli_num_rows($username) > 0 ) { array_push ($errors, "Username already taken"); }
+  // username  taken?-------------------------------------?
+$query = $db->query("SELECT * FROM testuser where username='$username'");
+$result = $query-> fetch_object(); 
+
+if($result){
+
+ array_push ($errors, "Username already taken");
+
+} 
+
+  else {
+	// username isn´t taken-------------------------------------?
 	
-	if  (mysqli_num_rows($email) > 0 ) { array_push ($errors, "Email already taken"); }
+	
+	
 	
   
   // register wenn keine Fehler in form
@@ -46,7 +57,7 @@ if (isset($_POST['reg_user'])) {
 	
 
   	header('location: mainview.php');
-  }
+  } }
 
 }
 
