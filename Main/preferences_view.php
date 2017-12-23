@@ -1,4 +1,6 @@
 <!-- My standard header-->
+<?php// session_start();  
+//echo $_SESSION['actualid'];?>
 <!DOCTYPE html>
 <html lang= "de">
 <head >
@@ -19,11 +21,11 @@
 <!--  -->	
 </br>
 <h1> Add preferences to change the recipe-proposals at the Homepage. You can add 1 preference per question.</h1>
-<?php include ('core/preferencecreate.php');?>
+<p> In case you already made your preferences, this will completely reset the old preferences.</p>
+<?php include ('core/preferencecreate.php'); ?> 
 <form method="post" action="core/preferencecreate.php">
 			<br/>
-			What is your Username? :<br/>	
-			<input type="name" name="user"><br/>		<!-- soll später noch automatisch erkannt werden-->
+			
 			What is your favorite Food? :<br/>
 			<input type="name" name="favorite"><br/>
 			What kind of food do you like? :<br/>

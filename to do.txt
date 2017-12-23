@@ -9,7 +9,7 @@ rezeptsortierung
 
 Werbung?  oder preferenzen einzeln??
 
-registrierung -> keine doppelten emails ??    username geht mehr doppelt
+registrierung -> keine doppelten emails ??    username geht nicht mehr doppelt
 
 Upload Rezepte----------------------------------------
 
@@ -17,8 +17,8 @@ Upload Rezepte----------------------------------------
 
 
 recipeupload : preparation field bigger
-addpreferences -> user automatisch erkennen ohne nachzufragen  + id automatisch erkennen( funktioniert)   update if vorhanden
-Doppelte Eintragungen vermeiden: Registrierung, Preferenzen.  
+
+
 Neue preferenzen übersetten die alten
 
 Order by preferencen main page rezepte ? 
@@ -31,3 +31,6 @@ user -> admin/user -> fähigkeit leute in members zu admin zu ernennen. evtl memb
 
 allrecielist: rezepte an eigene seiten verlinken
 rezepte zum einbauen : https://www.msn.com/de-de/kochen-und-genuss/foodnews/5-rezepte-die-weihnachts-muffel-lieben/ar-BBG5I26?ocid=spartanntp&MSCC=1513764205
+
+
+password ändern können?

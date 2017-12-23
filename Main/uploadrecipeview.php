@@ -1,4 +1,5 @@
 <!-- My standard header-->
+<?php session_start();  ?>
 <!DOCTYPE html>
 <html lang= "de">
 <head >
@@ -19,6 +20,7 @@
 <!--  -->	
 </br>
 <h1> Upload your own recipes </h1>
+<?php echo $_SESSION['actualid'];?>
 <?php include ('core/recipeupload.php');?>
 <form method='post'  action='core/recipeupload.php'>
 			What is the name of your Food? :<br/>

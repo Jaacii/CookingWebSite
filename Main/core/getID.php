@@ -16,8 +16,8 @@ if ($conn->connect_error) {
 $sql = "SELECT * from testuser where username = '".$_SESSION['username']."'";		
 $result = $conn->query($sql);
 $row = mysqli_fetch_assoc($result);
-$actualid = $row['id'];
-echo $actualid;				/*$row['id'];*/
+$_SESSION['actualid'] = $row['id'];
+//echo $_SESSION['actualid'] ;				/*$row['id'];*/
 
 $conn->close();
 ?>
