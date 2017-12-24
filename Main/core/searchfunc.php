@@ -1,29 +1,48 @@
 <?php 
+$db = mysqli_connect('localhost', 'root', '', 'cooking4you');
+
   if(isset($_POST['submitt'])){ 
-	//?  if(isset($_GET['go'])){ 
-	  if(preg_match("/^[  a-zA-Z]+/", $_POST['search'])){ 
-	  $search=$_POST['search']; 
-	  //connect  to the database 
-	$db=mysql_connect  ('localhost', 'root', '', 'cooking4you') or die ('I cannot connect to the database  because: ' . mysql_error()); //maybe wil cause an error
-	  //-select  the database to use 
-	  //$mydb=mysql_select_db("testrecipe"); 
-	  //-query  the database table 
-	  $sql="SELECT id, pic, foodname, difficulty, rating FROM testrecipe WHERE foodname LIKE '%" . $search .  '%' ; 	//strange "" ''
-	  $sqlid="SELECT id FROM testrecipe WHERE foodname LIKE '%" . $search .  '%' ; //übergeben an exa seite
-	  // -run  the query against the mysql query function 
-	  $result=mysql_query($sql); 
-	  //-create  while loop and loop through result set 
-	  while($row=mysql_fetch_array($result)){ 
-	          $foodname  =$row['foodname']; 
-	         // $LastName=$row['LastName']; 
-	        //  $ID=$row['ID']; 
-	  //-display the result of the array 
-	  echo "<ul>\n"; 
-	  echo "<li>" . "<a  href=\"search.php?id=$ID\">"   .$foodname /*. " " . $LastName */.  "</a></li>\n"; 
-	  echo "</ul>"; 
-	   header('location: ../exa_recipepage.php') ;
-	  }
-	  //else{ 
-	//echo  "<p>Please enter a search query</p>"; 
+  
+  //get value and prevent a mysql injection
+   $search = mysqli_real_escape_string($db, $_POST['search']);
+
+    // changes characters used in html to their equivalents, for example: < to &gt;   
+        $query = htmlspecialchars($search); 
+       
+	//results
+        $raw_results = mysqli_query($db ,"SELECT * FROM recipe2
+            WHERE (`foodname` LIKE '%".$search."%') OR (`foodname` LIKE '%".$search."%')") or die(mysql_error());
+             
+       
+         
+        if(mysqli_num_rows($raw_results) > 0){ // if one or more rows are returned do following
+             
+			// $results = mysql_fetch_array($raw_results) puts data from database into array, while it's valid it does the loop
+            while($results = mysqli_fetch_array($raw_results)){
+            
+             
+			 //echo result.  Es fehlt aber noch eine verlinkung oder weiterleitung für die seiten
+                echo "<p><h3>".$results['foodname']."</h3>".$results['foodname']."</p>";
+               
+            }
+             
+        }
+        else{ // no matching rows 
+            echo "No results";
+        }
+         
+    
+   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
 	} 
 	?>
