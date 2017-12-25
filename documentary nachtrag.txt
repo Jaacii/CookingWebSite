@@ -15,3 +15,4 @@
 21.12 -> ID wird erkannt. 
 23.12 -> es gibt keine doppelten usernamen mehr, preferences können nur einmal pro profil existieren und können resetted werden. Passwort soll noch gewechselt werden können. noch funktioniert es nict
 24.12 -> basic search func
+25.12 -> basic randomizer works  displayed wrong.  need to make the recipe pages

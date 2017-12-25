@@ -8,8 +8,9 @@ $db = mysqli_connect('localhost', 'root', '', 'cooking4you');
 // x = min id 1.   y = max id.   evtl y =SELECT MAX(id) FROM tablename;
 
 $x = 1;
-$y = "SELECT MAX(id) FROM testrecipe"
+$y = "SELECT MAX(id) FROM testrecipe";
 
+/*
 $randomindex = rand($x , $y);
 echo $randomindex;
 $sql = "SELECT * FROM recipe WHERE id= $randomindex";
@@ -17,14 +18,21 @@ $result = $dbconnect-> query($sql);
 $row = mysqli_fetch_assoc($result);
 
 echo "</br>" . $row["pic"]. "  " . $row["foodname"]. "   difficulty:   " . $row["difficulty"]. " rating:   " . $row["rating"]. "<br>";
-
+*/
  //header('location: ../mainview.php');		header -> testpage alles richtig anordnen
 
 
 
 
 
+$range_result = mysqli_query( $db ," SELECT MAX(`id`) AS max_id , MIN(`id`) AS min_id FROM `recipe2` ");
+$range_row = mysqli_fetch_object( $range_result );
+$random = mt_rand( $range_row->min_id , $range_row->max_id );
+$result = mysqli_query( $db, " SELECT * FROM `recipe2` WHERE `id` >= $random LIMIT 5 "); 
 
+while ($result = $result->fetch_assoc()) {
+    echo "<br>" . $result['foodname']. "  | difficulty:  ".$result['difficulty'] . "  |  rating: ". $result['rating'] . "<br>";
+}
 
 
 

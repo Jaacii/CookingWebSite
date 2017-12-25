@@ -11,7 +11,7 @@ Werbung?  oder preferenzen einzeln??
 
 registrierung -> keine doppelten emails ??    username geht nicht mehr doppelt
 
-Upload Rezepte----------------------------------------
+
 
 //mainview ->   Bilder ausgeben? anklickbar machen und spezielle rezept seite öffnen?
 
@@ -34,3 +34,7 @@ rezepte zum einbauen : https://www.msn.com/de-de/kochen-und-genuss/foodnews/5-re
 
 
 password ändern können?
+
+
+
+displayed wrong.  need to make the recipe pages
