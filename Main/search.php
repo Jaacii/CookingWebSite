@@ -1,9 +1,5 @@
 <!DOCTYPE html>
 
-<?php 
-include('core/searchfunc.php') ;
-
-?>
 
 <html lang= "de">
 <head >
@@ -22,10 +18,17 @@ include('core/searchfunc.php') ;
  </header>
 <!--  Search form -->
  
- <form method="post" action="core/searchfunc.php" if="searchform">	<!-- ?go? -->
+ <form method="post" action="search.php" if="searchform">	<!-- ?go? -->
 <input type="text" name="search" placeholder="Search..">
 <input type="submit" name="submitt" value="Search">
 </form>
+
+<div class=recipeareal>
+<?php 
+include('core/searchfunc.php') ;
+
+?>
+</div>
 </body>
 
 </html>
