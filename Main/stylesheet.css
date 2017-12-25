@@ -40,12 +40,17 @@ body {
 }
 
 .recipeareal {
-	padding-top: 25px;
-	margin: 10px;
+	padding-left: 25px;
+	margin: 25px;
+	background-color: AliceBlue;
+	
+}
+.recipearealmain {
+	padding-left: 25px;
+	margin: 25px;
 	
 	
 }
-
 /*Login/Register*/
 
 
