@@ -24,7 +24,7 @@
  <!--   HEADER end -->
  
  <body>
- 
+This is a project for the university. I'm learning php / mysql / css / html here.
  </body>
  </html>
  
