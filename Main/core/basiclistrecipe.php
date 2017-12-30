@@ -17,7 +17,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
    // Jede Reihe ausgeben
    while($row = $result->fetch_assoc()) {
-	   echo "</br>" . $row["image"]. "  " . $row["foodname"]. "   difficulty:   " . $row["difficulty"]. " rating:   " . $row["rating"]. "<br>";
+	   echo "</br>" . '<img src="'.$row['image'].'">'.  "  " . $row["foodname"]. "   difficulty:   " . $row["difficulty"]. " rating:   " . $row["rating"]. "<br>";
 		}
 } else {
     echo "No recipes uploaded yet.";

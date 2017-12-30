@@ -12,7 +12,7 @@ $row = mysqli_fetch_assoc($sql);
 
 
     echo "<br>" . $row['foodname']. "  | difficulty:  ".$row['difficulty'] . "  |  rating: ". $row['rating'] . "<br>";
-	  echo "" . $row['image']. "  <br><br>ingredients: ".$row['ingredients'] . "    <br><br>preparation: ". $row['preparation'] . "<br>";
+	  echo "" . '<img src="'.$row['image'].'">'. "  <br><br>ingredients: ".$row['ingredients'] . "    <br><br>preparation: ". $row['preparation'] . "<br>";
 	
 
 
