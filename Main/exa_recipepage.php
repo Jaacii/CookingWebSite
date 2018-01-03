@@ -5,7 +5,7 @@
 <head >
 	<meta charset= "utf-8">
 	<title>Kochdatenbank</title>
-	<link rel="stylesheet" href=stylerecipe.css>
+	<link rel="stylesheet" href=stylesheet.css>
 </head>
 
 <body>
@@ -15,6 +15,8 @@
  </nav>
 <div class=sidebar>
 <?php
+
+/*
 //wie kriege ich die idee beim anklicken automatisch aktualisiert.
 $id =1;													//get id von suche oder vom drauf klicken auf bild??
 $db=mysql_connect  ('localhost', 'root', '', 'cooking4you');
@@ -31,13 +33,17 @@ if ($result->num_rows > 0) {
 } else {
     echo "No recipes uploaded yet.";
 }
-
+*/
 ?>
 
 </div>
 <div class=maincontent>
 <img src="img_placeholder/KimchiPlaceholder.jpg" alt="Kimchi" width="350" height="230">
 <?php
+$food_id = $_GET['food_id'];
+echo $food_id;
+
+/*
 $sql2 = "SELECT   pic ,foodname, preparation  FROM testrecipe WHERE id = $id";
 $result2 = $db->query($sql2);
 if ($result2->num_rows > 0) {
@@ -50,6 +56,8 @@ if ($result2->num_rows > 0) {
 }
 
 $conn->close();
+
+*/
 ?>
 </div>
 

@@ -25,6 +25,7 @@
 
 <div class=recipeareal>
 <?php 
+
 include('core/searchfunc.php') ;
 
 ?>

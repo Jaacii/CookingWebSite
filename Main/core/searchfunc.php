@@ -22,7 +22,7 @@ $db = mysqli_connect('localhost', 'root', '', 'cooking4you');
             
              
 			 //echo result.  Es fehlt aber noch eine verlinkung oder weiterleitung für die seiten
-                echo "<p><h3>" .$results['foodname']."</h3>" . '<img src="'.$results['image'].'">'.   "difficulty: ".$results['difficulty']." |    rating: ".$results['rating']."</p>";
+                echo "<p><a href='exa_recipepage.php?food_id=".$results['id']."' >".$results['foodname'].  "<img src=".$results['image'].">".  "difficulty: ".$results['difficulty']." |    rating: ".$results['rating']."</p></a>";
                
             }
              

@@ -18,3 +18,4 @@
 25.12 -> basic randomizer works  displayed wrong.  need to make the recipe pages, added contact about basic
 
 30.12 -> images werden zumindest als falsch angezeigt
+3.1 -> einzelne rezeptseiten mit individueller anzeige - lösung gefunden
