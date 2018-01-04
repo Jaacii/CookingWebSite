@@ -44,13 +44,13 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT id, foodname, difficulty, rating FROM testrecipe";
+$sql = "SELECT id, foodname, difficulty, rating FROM recipe2";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
    // Jede Reihe ausgeben
    while($row = $result->fetch_assoc()) {
-	   echo "" . $row["id"]. " - " . $row["foodname"]. "   difficulty:  " . $row["difficulty"]. "   rating: " . $row["rating"]."<br>";
+	  echo "<a href='exa_recipepage.php?food_id=".$row['id']."' >". $row['foodname'].  " difficulty: ".$row['difficulty']." |    rating: ".$row['rating']."</a></br>";
 		}
 } else {
     echo "No recipes uploaded yet.";
