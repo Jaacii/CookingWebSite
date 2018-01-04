@@ -30,7 +30,7 @@
 
 
 <?php 
-include ('Database/randomizer.php');
+include ('core/randomizer.php');
 ?>
 
 </div>

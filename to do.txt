@@ -1,31 +1,31 @@
-
-Search funktion
-
+Fast alles wichtige ist fertig^^
 
 
-Profil preferenzen
-rezepte
+Finale Datanbank neu machen nach funktionstests
+
+
+
+
+
 rezeptsortierung
 
-Werbung?  oder preferenzen einzeln??
+Werbung?  oder preferenzen einzeln??  -> pref einzeln
 
-registrierung -> keine doppelten emails ??    username geht nicht mehr doppelt
+registrierung -> keine doppelten emails ??  
 
 
 
-//mainview ->   Bilder ausgeben? anklickbar machen und spezielle rezept seite öffnen?
+//mainview ->   Bilder normal anzeigen
 
 
 recipeupload : preparation field bigger
 
 
-Neue preferenzen übersetten die alten
 
 Order by preferencen main page rezepte ? 
 evtl: members : anzahl der rezeptuploads anzeigen -> counter setzen??
 
 
-/get id von suche oder vom drauf klicken auf bild exa recipe page und search und mainview betroffen??----------------------------------------
 
 user -> admin/user -> fähigkeit leute in members zu admin zu ernennen. evtl member suchen können.
 
