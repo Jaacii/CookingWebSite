@@ -2,6 +2,7 @@
 
 body {
 	background-color: lightblue;
+	
 }
 /*mainview essential classes*/
 
@@ -43,14 +44,19 @@ body {
 	padding-left: 25px;
 	margin: 25px;
 	background-color: AliceBlue;
+	font-family: sans-serif;
+	font-size: 18px;
 	
 }
 .recipearealmain {
 	padding-left: 25px;
 	margin: 25px;
+	font-family: sans-serif;
+	font-size: 18px;
 	
 	
 }
+
 /*Login/Register*/
 
 
@@ -63,9 +69,11 @@ body {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	font-size: 25px;
+	
 }
 
 .registerblock{
+	font-family: sans-serif;
 	background-color: pink;
 	border: 5px solid grey;
 	text-align: center;
@@ -84,6 +92,47 @@ body {
 	padding-bottom: 5px;
 	
 }
+
+.informationtext {
+		font-family: sans-serif;
+		font-size: 18px;
+		background: Azure ;
+		padding-left: 30px;
+		margin-left: 15px;
+	
+}
+.shiftedinfotext {
+		padding: 1px 30px;
+	 
+	
+}
+
+.contactform {
+		font-family: sans-serif;
+		color: black;
+		padding: 5px 10px;
+		cursor: pointer;
+		border: none;
+		border-radius: 8px;
+}
+
+.newsletter {
+	border: 4px solid #f1f1f1;
+}
+.newsletterform {
+	width: 100%;
+    padding: 7px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+	
+}
+
+
+
+
+
 
 form, .content {
 	margin-left: 25px;
