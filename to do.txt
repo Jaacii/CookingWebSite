@@ -35,7 +35,7 @@ rezepte zum einbauen : https://www.msn.com/de-de/kochen-und-genuss/foodnews/5-re
 
 password ändern können?
 
-
+mainview -> newsletter wird nicht verlinkt
 
 displayed wrong.  need to make the recipe pages
 

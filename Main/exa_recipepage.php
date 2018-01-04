@@ -51,8 +51,8 @@ $sql = "SELECT  * FROM recipe2 WHERE id = $food_id";
 $result = $db->query($sql);
 //$row = mysqli_fetch_assoc($sql);
 */
-	  echo "<br>" . $row['foodname']. "  | difficulty:  ".$row['difficulty'] . "  |  rating: ". $row['rating'] . "<br>";
-	    echo "" . '<img src="'.$row['image'].'">'. "  <br><br>ingredients: ".$row['ingredients'] . "    <br><br>preparation: ". $row['preparation'] . "<br>";
+	  echo "<br><h1><strong>" . $row['foodname']. " </strong> | difficulty:  ".$row['difficulty'] . "  |  rating: ". $row['rating'] . "</h1><br>";
+	    echo "" . '<img src="'.$row['image'].'">'. "  <br><br><h3>ingredients:</h3> ".$row['ingredients'] . "    <br><br><h3>preparation:</h3> ". $row['preparation'] . "<br>";
  
 
 

@@ -27,7 +27,7 @@
  <!--   HEADER end -->
 <!--  Search form -->
  
- <form method="post" action="search.php" if="searchform">	<!-- ?go? -->
+ <form method="post" action="search_view.php" if="searchform">	<!-- ?go? -->
 <input type="text" name="search" placeholder="Search..">
 <input type="submit" name="submitt" value="Search">
 </form>

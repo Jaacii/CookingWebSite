@@ -19,4 +19,4 @@
 
 30.12 -> images werden zumindest als falsch angezeigt
 3.1 -> einzelne rezeptseiten mit individueller anzeige - lösung gefunden
-4.1 -> design changed. newslatter, contact form added
+4.1 -> design changed. newslatter, contact form added,   exa-page design

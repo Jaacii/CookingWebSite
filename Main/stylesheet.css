@@ -4,8 +4,9 @@ body {
 	background-color: lightblue;
 	
 }
-/*mainview essential classes*/
 
+
+/*mainview essential classes*/
 .headclass {
 	background-color: Orange;
 	border: 5px solid Yellow;
@@ -13,9 +14,6 @@ body {
 	padding-left: 20px;
 	font-size: 120%
 }
-
-
-
 .sidebar{
 	width: 16%;					/*breite */
 	height: 100%;				/*höhe */
@@ -31,7 +29,6 @@ body {
 	padding-top: 5px;
 	
 }
-
 .navigation {
 	background-color: darkorange;
 	border: 2px solid black;
@@ -39,7 +36,6 @@ body {
 	font-size: 120%;
 	
 }
-
 .recipeareal {
 	padding-left: 25px;
 	margin: 25px;
@@ -57,9 +53,8 @@ body {
 	
 }
 
+
 /*Login/Register*/
-
-
 .loginblock{
 	background-color: pink;
 	border: 5px solid grey;
@@ -71,7 +66,6 @@ body {
 	font-size: 25px;
 	
 }
-
 .registerblock{
 	font-family: sans-serif;
 	background-color: pink;
@@ -82,7 +76,6 @@ body {
 	/*display:  inline-block;	*/
 	padding-bottom: 5px;
 }
-
 .error {
 	background-color: AliceBlue;
 	text-align: center;
@@ -93,6 +86,7 @@ body {
 	
 }
 
+/* Contactpage */
 .informationtext {
 		font-family: sans-serif;
 		font-size: 18px;
@@ -106,7 +100,6 @@ body {
 	 
 	
 }
-
 .contactform {
 		font-family: sans-serif;
 		color: black;
@@ -116,6 +109,7 @@ body {
 		border-radius: 8px;
 }
 
+/* Newsletter  */
 .newsletter {
 	border: 4px solid #f1f1f1;
 }
@@ -129,10 +123,18 @@ body {
 	
 }
 
+/* Exa Recipe page  */
+.maincontent {
+	font-family: sans-serif;
+	font-size: 18px;
+	background-color:  Azure  ;
+	padding-left: 30px;
+	margin-left: 15px;
+	padding-bottom: 30px;
+	
+}
 
-
-
-
+/*  */
 
 form, .content {
 	margin-left: 25px;
@@ -142,7 +144,7 @@ form, .content {
 	background: AliceBlue ; /*AliceBlue*/
 	border-radius: 0px 0px 10px 10px;
 
- .btn {
+.btn {
 	border: none;
 	border-radius: 5px;
 	padding: 25px;
