@@ -21,7 +21,7 @@
 
  <nav> 
  <div class=navigation>
- <a href ="mainview.php">| Home |</a> <a href ="search.php"> Search |</a>  <a href ="random.php"> Random |</a> <a href ="contactview.php"> Contact |</a> <a href ="aboutview.php"> About |</a> <a href ="test.php"> Members |</a><a href ="allrecipeview.php"> Recipes |</a><!-- --> 
+ <a href ="mainview.php">| Home |</a> <a href ="search_view.php"> Search |</a>  <a href ="random_view.php"> Random |</a> <a href ="contactview.php"> Contact |</a> <a href ="aboutview.php"> About |</a> <a href ="memberlist_view.php"> Members |</a><a href ="recipelist_view.php"> Recipes |</a><!-- --> 
  </nav>
  </header>
  <!--   HEADER end -->
@@ -46,7 +46,7 @@
     	<p> Hello <strong><?php echo $_SESSION['username']; ?></strong> </br>ID:  <?php include ('core/getID.php'); echo $_SESSION['actualid']?> </p>
 		<p> <a href="uploadrecipeview.php" style="color: blue";" >Upload Recipe </a> </p>
 		<p> <a href="preferences_view.php" style="color: blue";" >Add Food-Preferences </a> </p>
-		<p> <a href="changePW.php" style="color: blue";" >Change Password </a> </p>
+		<p> <a href="changePW_view.php" style="color: blue";" >Change Password </a> </p>
 		<!-- add edit preferences? -->
     	<p> <a href="core/logout.php" style="color: red;">logout</a> </p>	<!-- logout funktioniert noch nicht-->
 		
