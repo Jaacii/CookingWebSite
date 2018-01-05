@@ -22,7 +22,7 @@
 <h1> Upload your own recipes </h1>
 <?php// echo $_SESSION['actualid'];?>
 <?php include ('core/recipeupload.php');?>
-<form method='post'  action='core/recipeupload.php'>
+<form method='post'  action='core/recipeupload.php' enctype="multipart/form-data">
 			What is the name of your Food? :<br/>
 			<input type="name" name="foodname"><br/>
 			What is the nationality of the food ? :<br/>
@@ -40,7 +40,7 @@
 			<br/><br/>Preparation:<br/>
 			<input type="name" name="preparation"><br/>
 			<br/><br/>
-			<button type="submit" class="btn" name="upload">Upload Recipe</button>
+			<button type="submit" class="btn" name="upload" value="UPLOAD">Upload Recipe</button>
  </form>
 	
 </body>
