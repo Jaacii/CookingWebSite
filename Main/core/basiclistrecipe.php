@@ -11,7 +11,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$raw_results = mysqli_query($conn ,"SELECT * FROM recipe2 ") or die(mysql_error());
+$raw_results = mysqli_query($conn ,"SELECT * FROM recipe ") or die(mysql_error());
 //$result = $conn->query($sql);
 
  if(mysqli_num_rows($raw_results) > 0){
