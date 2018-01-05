@@ -78,7 +78,7 @@ if (isset($_POST['login_user'])) {
   	$password = md5($password);
   	$query = "SELECT * FROM testuser WHERE username='$username' AND password='$password'";
   	$results = mysqli_query($db, $query);
-  	if (mysqli_num_rows($results) == 1) {  
+  	if (mysqli_num_rows($results) == 1) {  //fehler hier ? Warning: mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in C:\xampp\htdocs\testing\server.php on line 59	
 		$_SESSION['username'] = $username;
 		$_SESSION['success'] = "Logged in";
 	  

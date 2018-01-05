@@ -11,18 +11,23 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT image, foodname, difficulty, rating FROM recipe2";
-$result = $conn->query($sql);
+$raw_results = mysqli_query($conn ,"SELECT * FROM recipe2 ") or die(mysql_error());
+//$result = $conn->query($sql);
 
-if ($result->num_rows > 0) {
+ if(mysqli_num_rows($raw_results) > 0){
    // Jede Reihe ausgeben
-   while($row = $result->fetch_assoc()) {
-	   echo "</br>" . '<img src="'.$row['image'].'">'.  "  " . $row["foodname"]. "   difficulty:   " . $row["difficulty"]. " rating:   " . $row["rating"]. "<br>";
-		}
+ while($results = mysqli_fetch_array($raw_results)){
+            
+      
+                echo "<p><a href='exa_recipepage.php?food_id=".$results['id']."' >".'<img src='. $results['image'] .'" />'. $results['foodname'].  " difficulty: ".$results['difficulty']." |    rating: ".$results['rating']."</p></a>";
+               
+            }
 } else {
     echo "No recipes uploaded yet.";
 }
 $conn->close();
 
+
+// <img src="data:image/jpeg;base64,'.base64_encode( $result['image'] )."/> "
 //Bilder ausgeben? anklickbar machen und spezielle rezept seite öffnen?
 ?>
