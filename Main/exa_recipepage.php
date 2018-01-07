@@ -23,10 +23,12 @@
  <a href ="mainview.php">| Home |</a> <a href ="search_view.php"> Search |</a>  <a href ="random_view.php"> Random |</a> <a href ="contactview.php"> Contact |</a> <a href ="aboutview.php"> About |</a> <a href ="memberlist_view.php"> Members |</a><a href ="recipelist_view.php"> Recipes |</a><!-- --> 
  </nav>
  
+ </div>
  </header>
  <!--   HEADER end -->
 <!--  Search form -->
 <!--<div class=sidebar>
+
 <?php
 
 

@@ -13,8 +13,11 @@
 <div class=sidebar> 
 <img src="img_placeholder/werbeplaceholder.jpg">
 </br>
- <a href ="register.php">Sign up</a>
+ <a href ="register.php">|Sign up</a>
   <a href ="login.php">| Login |</a>
+ </br>
+  <a href ="newsletter_view.php">| Subscribe to our Newsletter |</a>
+
 </div>
 <header class=headclass> <!--Logo-->
  <h1>Kochdatenbank</h1>
@@ -23,9 +26,10 @@
  <div class=navigation>
  <a href ="mainview.php">| Home |</a> <a href ="search_view.php"> Search |</a>  <a href ="random_view.php"> Random |</a> <a href ="contactview.php"> Contact |</a> <a href ="aboutview.php"> About |</a> <a href ="memberlist_view.php"> Members |</a><a href ="recipelist_view.php"> Recipes |</a><!-- --> 
  </nav>
+ 
+ </div>
  </header>
  <!--   HEADER end -->
- 
  
 <div class="content">
   	<!-- notification -->
@@ -53,11 +57,13 @@
     <?php endif ?>
 	</div>
 	
+	<?php //$url = "https://upload.wikimedia.org/wikipedia/commons/3/3d/8hosomak8.jpg"; ?>
 	
   <div class=recipearealmain>
   <!--<a href ="exa_recipepage.php">
    <img src="img_placeholder/KimchiPlaceholder.jpg" alt="Kimchi" width="350" height="230"> 
-  Kimchi</a>-->
+  Kimchi</a>
+  <img src="<?php //echo $url; ?>" />-->
   <?php  include ('core/basiclistrecipe.php'); ?>
   
   </div>

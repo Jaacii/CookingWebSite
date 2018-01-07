@@ -44,7 +44,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT id, foodname, difficulty, rating FROM recipe2";
+$sql = "SELECT id, foodname, difficulty, rating FROM finalrecipe";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {

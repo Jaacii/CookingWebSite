@@ -10,7 +10,7 @@ $db = mysqli_connect('localhost', 'root', '', 'cooking4you');
         $query = htmlspecialchars($search); 
        
 	//results
-        $raw_results = mysqli_query($db ,"SELECT * FROM recipe2
+        $raw_results = mysqli_query($db ,"SELECT * FROM finalrecipe
             WHERE (`foodname` LIKE '%".$search."%') OR (`foodname` LIKE '%".$search."%')") or die(mysql_error());
              
        
