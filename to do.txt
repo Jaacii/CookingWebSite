@@ -2,20 +2,18 @@ Fast alles wichtige ist fertig^^
 
 
 Finale Datanbank neu machen nach funktionstests
-
-
-
-
-
+password -> anzeigen wenn falsches altes pw eingegeben wurde
+displayed wrong.  need to make the recipe pages
 rezeptsortierung
 
-Werbung?  oder preferenzen einzeln??  -> pref einzeln
+
+
+
 
 registrierung -> keine doppelten emails ??  
 
 
 
-//mainview ->   Bilder normal anzeigen
 
 
 recipeupload : preparation field bigger
@@ -23,18 +21,19 @@ recipeupload : preparation field bigger
 
 
 Order by preferencen main page rezepte ? 
+
+
+
+
+
+
+
+EXTRA: 
 evtl: members : anzahl der rezeptuploads anzeigen -> counter setzen??
 
 
 
 user -> admin/user -> fähigkeit leute in members zu admin zu ernennen. evtl member suchen können.
 
-rezepte zum einbauen : https://www.msn.com/de-de/kochen-und-genuss/foodnews/5-rezepte-die-weihnachts-muffel-lieben/ar-BBG5I26?ocid=spartanntp&MSCC=1513764205
 
-
-password ändern können?
-
-mainview -> newsletter wird nicht verlinkt
-
-displayed wrong.  need to make the recipe pages
 rating system?

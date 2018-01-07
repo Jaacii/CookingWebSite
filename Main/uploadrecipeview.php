@@ -29,11 +29,11 @@
 			<input type="name" name="nationality"><br/>
 			What is the flavor of the food? :<br/>
 			<input type="name" name="flavor"><br/>
-			Ingredients: :<br/>
+			Ingredients: <br/>
 			<input type="name" name="ingredients"><br/>
-			difficulty: :<br/>
+			difficulty: <br/>
 			<input type="name" name="difficulty"><br/>
-			rating: :<br/>
+			rating: <br/>
 			<input type="name" name="rating"><br/>
 	<!--	picture of the food:<br/> 
 			<input type="file" name="image"><br/> 						Image hat Fehler bei der anzeige erzeugt -->		

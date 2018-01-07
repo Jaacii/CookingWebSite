@@ -25,9 +25,9 @@
 <?php include ('core/recipeupload.php');?>
 <form method='post'  action='changePW_view.php'>
 			Your old password? :<br/>
-			<input type="name" name="old"><br/>
+			<input type="password" name="old"><br/>
 			Your new password? :<br/>
-			<input type="name" name="new"><br/>
+			<input type="password" name="new"><br/>
 			
 			<br/><br/>
 			<button type="submit" class="btn" name="change">Change Password</button>
@@ -43,27 +43,19 @@
 		$oldpw = md5($old);//PW-Verschlüsselung
 		$newpw = md5($new);//PW-Verschlüsselung
 		
-		mysql_query("UPDATE testuser SET password ='$newpw' WHERE id = '§id' "); //???
+//	$pwcheck = mysqli_query( $db, " SELECT * FROM `testuser` WHERE `id` = '$id' AND `password` = '$newpw'"); 
+	//$rowpw = mysqli_fetch_assoc($pwcheck);
+	 if (empty($old) or empty($new)) { echo "empty input!";}	//check if empty 
+	//	elseif ($rowpw['password'] !== $oldpw ) { echo "wrong old password!";}				//check if wrong password				erzeugt fehler
+
+	 else {
+	
+		$q = mysqli_query($db, "UPDATE `testuser` SET password = '$newpw' WHERE id = '$id' AND password ='$oldpw'");		//works
 		
 	
-		
-			header('location: changePW.php');
-		
-		
-		/*
-		//doesn´t work yet. else is working
-		$query = $db->query("SELECT password FROM preferences where id='$userid'");
-		if(query == $old) {
-		 	$password = md5($new);	
-			$query = "UPDATE  testuser  SET password ='$password'  WHERE id = $userid";
-			$result = mysqli_query($db, $query);
 			header('location: mainview.php');
-		} else {
-			 header('location: changePW.php');
-		}
-		
-		
-		*/
+	 }
+	
 	}
 	?>
 

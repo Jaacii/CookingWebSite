@@ -23,3 +23,4 @@
 
 5.1 -> repaired file upload/recipeupload
 7.1 -> image replaced with image url. works. exa will display images now + contactform is directed to trash^^ deleted an error with the view
+	pwchange is working
