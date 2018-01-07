@@ -35,10 +35,12 @@
 			<input type="name" name="difficulty"><br/>
 			rating: :<br/>
 			<input type="name" name="rating"><br/>
-			picture of the food:<br/> 
-			<input type="file" name="image"><br/> 
+	<!--	picture of the food:<br/> 
+			<input type="file" name="image"><br/> 						Image hat Fehler bei der anzeige erzeugt -->		
 			<br/><br/>Preparation:<br/>
 			<input type="name" name="preparation"><br/>
+			<br/><br/>URL of a picture of your food:<br/>
+			<input type="name" name="imageurl"><br/>
 			<br/><br/>
 			<button type="submit" class="btn" name="upload" value="UPLOAD">Upload Recipe</button>
  </form>

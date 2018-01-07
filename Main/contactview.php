@@ -38,7 +38,7 @@
  
  <strong>Contact formular: </strong>
   <div class="contactform">
-  <form action="contactplaceholder.php">		<!--erstmal nur als design erzeugt. Funktionieren soll es erstmal noch nicht -->
+  <form action="core/trash.php">		<!--erstmal nur als design erzeugt. Funktionieren soll es erstmal noch nicht -->
 
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Name..">

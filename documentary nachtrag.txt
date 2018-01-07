@@ -22,3 +22,4 @@
 4.1 -> design changed. newslatter, contact form added,   exa-page design,   recipelist links added
 
 5.1 -> repaired file upload/recipeupload
+7.1 -> image replaced with image url. works. exa will display images now + contactform is directed to trash^^

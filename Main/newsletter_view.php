@@ -26,7 +26,7 @@
  <!--   HEADER end -->
  
 <body>
- <form action="Newsletter_placeholder.php">		<!--- Auch der Newsletter dient momentan nur als Designobjekt. Hatte einfach Lust einen Newsletter auf der Seite einzubauen. --> 
+ <form action="core/trash.php">		<!--- Auch der Newsletter dient momentan nur als Designobjekt. Hatte einfach Lust einen Newsletter auf der Seite einzubauen. --> 
   <div class="newsletter">
     <h2>Subscribe to our Newsletter</h2>
     <p>The Newsletter will provide your Email account with recipes you might like. </p>

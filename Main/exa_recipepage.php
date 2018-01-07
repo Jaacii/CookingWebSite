@@ -42,7 +42,7 @@ $db = mysqli_connect('localhost', 'root', '', 'cooking4you');
 $food_id = $_GET['food_id'];
 
 
-$sql = mysqli_query( $db, " SELECT * FROM `recipe2` WHERE `id` = '$food_id'"); 
+$sql = mysqli_query( $db, " SELECT * FROM `finalrecipe` WHERE `id` = '$food_id'"); 
 $row = mysqli_fetch_assoc($sql);
 
 /*
@@ -51,8 +51,9 @@ $sql = "SELECT  * FROM recipe2 WHERE id = $food_id";
 $result = $db->query($sql);
 //$row = mysqli_fetch_assoc($sql);
 */
-	  echo "<br><h1><strong>" . $row['foodname']. " </strong> | difficulty:  ".$row['difficulty'] . "  |  rating: ". $row['rating'] . "</h1><br>";
-	    echo "" . '<img src="'.$row['image'].'">'. "  <br><br><h3>ingredients:</h3> ".$row['ingredients'] . "    <br><br><h3>preparation:</h3> ". $row['preparation'] . "<br>";
+//echo "<img src= ". $row['imageurl']."; " ;
+	  echo "" . '<img src="'.$row['imageurl'].'">'. "<br><h1><strong>" . $row['foodname']. " </strong> | difficulty:  ".$row['difficulty'] . "  |  rating: ". $row['rating'] . "</h1><br>";
+	    echo  "  <br><br><h3>ingredients:</h3> ".$row['ingredients'] . "    <br><br><h3>preparation:</h3> ". $row['preparation'] . "<br>";
  
 
 

@@ -11,7 +11,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$raw_results = mysqli_query($conn ,"SELECT * FROM recipe ") or die(mysql_error());
+$raw_results = mysqli_query($conn ,"SELECT * FROM finalrecipe ") or die(mysql_error());
 //$result = $conn->query($sql);
 
  if(mysqli_num_rows($raw_results) > 0){
@@ -19,7 +19,7 @@ $raw_results = mysqli_query($conn ,"SELECT * FROM recipe ") or die(mysql_error()
  while($results = mysqli_fetch_array($raw_results)){
             
       
-                echo "<p><a href='exa_recipepage.php?food_id=".$results['id']."' >".'<img src='. $results['image'] .'" />'. $results['foodname'].  " difficulty: ".$results['difficulty']." |    rating: ".$results['rating']."</p></a>";
+                echo "<p><a href='exa_recipepage.php?food_id=".$results['id']."' >". $results['foodname'].  " difficulty: ".$results['difficulty']." |    rating: ".$results['rating']."</p></a>";
                
             }
 } else {

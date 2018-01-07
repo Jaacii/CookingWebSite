@@ -1,11 +1,11 @@
 <?php   
 
 if(isset($_POST["upload"])){
-    $check = getimagesize($_FILES["image"]["tmp_name"]);
+   /* $check = getimagesize($_FILES["image"]["tmp_name"]);
     if($check !== false){
         $image = $_FILES['image']['tmp_name'];
         $imgContent = addslashes(file_get_contents($image));
-
+*/
         //connect
         $db = new mysqli( 'localhost', 'root', '', 'cooking4you');
         
@@ -22,13 +22,14 @@ if(isset($_POST["upload"])){
 		$ingredients = mysqli_real_escape_string($db, $_POST['ingredients']);
 		$difficulty = mysqli_real_escape_string($db, $_POST['difficulty']);
 		$rating = mysqli_real_escape_string($db, $_POST['rating']);
-		//$image = mysqli_real_escape_string($db, $_POST['image']);
+		$imageurl = mysqli_real_escape_string($db, $_POST['imageurl']);
 		$preparation = mysqli_real_escape_string($db, $_POST['preparation']);
 		
         
         
         //Upload Data
-        $insert = $db->query("INSERT into recipe (foodname, ingredients, nationality, flavor, difficulty, rating , preparation, image) VALUES ('$foodname', '$ingredients', '$nationality' , '$flavor', '$difficulty', '$rating', '$preparation','$imgContent')");
+        $insert = $db->query("INSERT into finalrecipe (foodname, ingredients, nationality, flavor, difficulty, rating , preparation, imageurl) 
+		VALUES ('$foodname', '$ingredients', '$nationality' , '$flavor', '$difficulty', '$rating', '$preparation','$imageurl')");
         
 		if($insert){
             echo " Upload successfull.";
@@ -37,9 +38,9 @@ if(isset($_POST["upload"])){
         }else{
             echo "Upload failed, please try again.";
         } 
-    }else{
+  /*  else{
         echo "Please select an image file to upload.";
-    }
+    }*/
 }
 
 

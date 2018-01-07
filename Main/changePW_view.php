@@ -23,7 +23,7 @@
 
 <?php $userid = $_SESSION['actualid']; ?>
 <?php include ('core/recipeupload.php');?>
-<form method='post'  action='changePW.php'>
+<form method='post'  action='changePW_view.php'>
 			Your old password? :<br/>
 			<input type="name" name="old"><br/>
 			Your new password? :<br/>
@@ -39,7 +39,18 @@
 	if (isset($_POST['change'])) {
 		$old = mysqli_real_escape_string($db, $_POST['old']);
 		$new = mysqli_real_escape_string($db, $_POST['new']);
+		$id = $_SESSION['actualid'];
+		$oldpw = md5($old);//PW-Verschlüsselung
+		$newpw = md5($new);//PW-Verschlüsselung
 		
+		mysql_query("UPDATE testuser SET password ='$newpw' WHERE id = '§id' "); //???
+		
+	
+		
+			header('location: changePW.php');
+		
+		
+		/*
 		//doesn´t work yet. else is working
 		$query = $db->query("SELECT password FROM preferences where id='$userid'");
 		if(query == $old) {
@@ -52,7 +63,7 @@
 		}
 		
 		
-		
+		*/
 	}
 	?>
 

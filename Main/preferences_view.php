@@ -28,7 +28,7 @@
 			
 			What is your favorite Food? :<br/>
 			<input type="name" name="favorite"><br/>
-			What kind of food do you like? :<br/>
+			What food-nationality do you like the most? :<br/>
 			<input type="name" name="favoriteNation"><br/>
 			What kind of food do you dislike? :<br/>
 			<input type="name" name="dislike"><br/>
