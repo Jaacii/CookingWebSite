@@ -23,7 +23,7 @@ $raw_results = mysqli_query($conn ,"SELECT * FROM finalrecipe ") or die(mysql_er
 	  
 	  
 	  
-                echo "<p><a href='exa_recipepage.php?food_id=".$results['id']."' >". $results['foodname'].  " difficulty: ".$results['difficulty']." |    rating: ".$results['rating']."</p></a>";
+                echo "<p><a href='exa_recipepage.php?food_id=".$results['id']."' >".  "<img src='".$results['imageurl'] ."' width='100', height='100'>"   . $results['foodname'].  " difficulty: ".$results['difficulty']." |    rating: ".$results['rating']."</p></a>";
                
             }
 } else {

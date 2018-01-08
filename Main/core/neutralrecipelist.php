@@ -40,7 +40,7 @@ while($row2 = $result2->fetch_assoc())
          
     }
 	// neutral
-	 else { echo "<p><a href='exa_recipepage.php?food_id=".$row2['id']."' >". $row2['foodname'].  " difficulty: ".$row2['difficulty']." |    rating: ".$row2['rating']."</p></a>";}
+	 else { echo "<p><a href='exa_recipepage.php?food_id=".$row2['id']."' >" .  "<img src='".$row2['imageurl'] ."' width='100', height='100'>"   . $row2['foodname'].  " difficulty: ".$row2['difficulty']." |    rating: ".$row2['rating']."</p></a>";}
 	
 
 

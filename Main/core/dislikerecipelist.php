@@ -38,7 +38,7 @@ while($row2 = $result2->fetch_assoc())
 	//dislike last----------------------
 	if (stripos($row2['foodname'], $row['dislike']) !== false OR stripos($row2['ingredients'], $row['dislike']) !== false OR stripos($row2['nationality'], $row['dislike']) !== false OR stripos($row2['nationality'], $row['dislike']) !== false )
     {
-         echo "<p><a href='exa_recipepage.php?food_id=".$row2['id']."' style='color: red'>". $row2['foodname'].  " difficulty: ".$row2['difficulty']." |    rating: ".$row2['rating']."</p></a>";
+         echo "<p><a href='exa_recipepage.php?food_id=".$row2['id']."' style='color: red'>".  "<img src='".$row2['imageurl'] ."' width='100', height='100'>"   . $row2['foodname'].  " difficulty: ".$row2['difficulty']." |    rating: ".$row2['rating']."</p></a>";
     }
 	
 	

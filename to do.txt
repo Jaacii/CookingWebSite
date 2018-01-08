@@ -1,4 +1,3 @@
-Fast alles wichtige ist fertig^^
 
 
 Finale Datanbank neu machen nach funktionstests
@@ -10,6 +9,17 @@ password -> anzeigen wenn falsches altes pw eingegeben wurde
 
 
 
+
+
+
+
+
+
+
+
+
+EXTRA: 
+
 registrierung -> keine doppelten emails ??  
 
 
@@ -20,15 +30,7 @@ recipeupload : preparation field bigger
 
 
 
-Order by preferencen main page rezepte ? 
 
-
-
-
-
-
-
-EXTRA: 
 evtl: members : anzahl der rezeptuploads anzeigen -> counter setzen??
 
 

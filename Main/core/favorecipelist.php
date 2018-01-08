@@ -28,7 +28,7 @@ while($row2 = $result2->fetch_assoc())
 	//favorites first----------------
     if(stripos($row2['foodname'], $row['favorite']) !== false OR stripos($row2['ingredients'], $row['favorite']) !== false OR stripos($row2['nationality'], $row['favorite']) !== false OR stripos($row2['nationality'], $row['favoriteNation']) !== false )
     {
-         echo "<p><a href='exa_recipepage.php?food_id=".$row2['id']."' style='color: green'>". $row2['foodname'].  " difficulty: ".$row2['difficulty']." |    rating: ".$row2['rating']."</p></a>";
+         echo "<p><a href='exa_recipepage.php?food_id=".$row2['id']."' style='color: green'>".  "<img src='".$row2['imageurl'] ."' width='100', height='100'>"   . $row2['foodname'].  " difficulty: ".$row2['difficulty']." |    rating: ".$row2['rating']."</p></a>";
     }
 	
 	/*//no favorite -> no dublicates-------------------neutral second
