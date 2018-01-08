@@ -64,7 +64,20 @@
    <img src="img_placeholder/KimchiPlaceholder.jpg" alt="Kimchi" width="350" height="230"> 
   Kimchi</a>
   <img src="<?php //echo $url; ?>" />-->
-  <?php  include ('core/basiclistrecipe.php'); ?>
+   <?php  if (!isset($_SESSION['username'])) : ?>
+   <?php  include  ('core/basiclistrecipe.php'); ?>
+   <?php endif ?>
+  
+    
+    <?php  if (isset($_SESSION['username'])) : ?>
+	<?php  include ('core/favorecipelist.php'); ?>
+	<?php  include ('core/neutralrecipelist.php'); ?>
+	<?php  include ('core/dislikerecipelist.php'); ?>
+    <?php endif ?>
+  
+
+  
+ 
   
   </div>
 

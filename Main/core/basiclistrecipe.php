@@ -19,6 +19,10 @@ $raw_results = mysqli_query($conn ,"SELECT * FROM finalrecipe ") or die(mysql_er
  while($results = mysqli_fetch_array($raw_results)){
             
       
+
+	  
+	  
+	  
                 echo "<p><a href='exa_recipepage.php?food_id=".$results['id']."' >". $results['foodname'].  " difficulty: ".$results['difficulty']." |    rating: ".$results['rating']."</p></a>";
                
             }

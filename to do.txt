@@ -3,8 +3,8 @@ Fast alles wichtige ist fertig^^
 
 Finale Datanbank neu machen nach funktionstests
 password -> anzeigen wenn falsches altes pw eingegeben wurde
-displayed wrong.  need to make the recipe pages
-rezeptsortierung
+
+
 
 
 
