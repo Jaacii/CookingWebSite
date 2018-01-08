@@ -39,7 +39,7 @@
 			<input type="file" name="image"><br/> 						Image hat Fehler bei der anzeige erzeugt -->		
 			<br/><br/>Preparation:<br/>
 			<input type="text" name="preparation"><br/>
-			<br/><br/>URL of a picture of your food:<br/>
+			<br/><br/>URL of a picture of your food: (Perfect size: 450x450) :<br/>
 			<input type="name" name="imageurl"><br/>
 			<br/><br/>
 			<button type="submit" class="btn" name="upload" value="UPLOAD">Upload Recipe</button>
